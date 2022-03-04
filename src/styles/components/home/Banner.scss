@@ -1,0 +1,11 @@
+.home__banner {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background: rgb(220, 47, 47);
+  background: -moz-linear-gradient(180deg, rgba(220, 47, 47, 1) 0%, rgba(255, 137, 76, 1) 75%, rgba(248, 248, 248, 1) 100%);
+  background: -webkit-linear-gradient(180deg, rgba(220, 47, 47, 1) 0%, rgba(255, 137, 76, 1) 75%, rgba(248, 248, 248, 1) 100%);
+  background: linear-gradient(180deg, rgba(220, 47, 47, 1) 0%, rgba(255, 137, 76, 1) 75%, rgba(248, 248, 248, 1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#dc2f2f",endColorstr="#f8f8f8",GradientType=1);
+  color: #f8f8f8;
+}

@@ -1,0 +1,26 @@
+.options {
+  margin-top: -75px;
+  .card {
+    padding: 10px;
+    overflow: hidden;
+    text-decoration: none;
+    border: none;
+    .card-title {
+      color: #363636;
+    }
+    .card__icon {
+      height: 100px;
+      width: 100px;
+      position: absolute;
+      bottom: -15px;
+      right: -15px;
+      color: #e5e5e5;
+    }
+  }
+  .card:hover {
+    .card__icon {
+      color: #fca311;
+      transition: 0.5s ease;
+    }
+  }
+}
