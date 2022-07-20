@@ -1,5 +1,5 @@
 import AppRouter from './AppRouter';
-import Header from './components/common/Header';
+import Header from './components/partials/Header';
 import './styles/App.scss';
 
 const App = () => {
