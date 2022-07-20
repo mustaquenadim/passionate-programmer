@@ -1,13 +1,15 @@
 import React, { Suspense } from 'react';
-import { Routes, Route } from 'react-router-dom';
+import { Route, Routes } from 'react-router-dom';
 import DefaultLayout from './components/layout/DefaultLayout';
 const Home = React.lazy(() => import('./pages/Home'));
-const NotFound = React.lazy(() => import('./pages/NotFound'));
+const SignIn = React.lazy(() => import('./pages/SignIn'));
+const SignUp = React.lazy(() => import('./pages/SignUp'));
+const NotFound = React.lazy(() => import('./pages/404'));
 
 const AppRouter = () => {
   return (
     <Routes>
-      <Route path='/' element={<DefaultLayout />}>
+      <Route path="/" element={<DefaultLayout />}>
         <Route
           index
           element={
@@ -16,7 +18,23 @@ const AppRouter = () => {
             </Suspense>
           }
         />
-        <Route path='*' element={<NotFound />} />
+        <Route
+          path="sign-up"
+          element={
+            <Suspense fallback={<>...</>}>
+              <SignUp />
+            </Suspense>
+          }
+        />
+        <Route
+          path="sign-in"
+          element={
+            <Suspense fallback={<>...</>}>
+              <SignIn />
+            </Suspense>
+          }
+        />
+        <Route path="*" element={<NotFound />} />
       </Route>
     </Routes>
   );

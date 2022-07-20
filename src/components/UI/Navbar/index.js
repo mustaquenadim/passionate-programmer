@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 export const UiNavbar = () => {
   return (
-    <Navbar expand="lg" fixed="top">
+    <Navbar expand="lg" sticky="top">
       <Container>
         <Navbar.Brand as={Link} to="/">
           Passionate Programmer
@@ -17,10 +17,10 @@ export const UiNavbar = () => {
             <Nav.Link as={Link} to="/">
               Mustaque Nadim
             </Nav.Link>
-            <Nav.Link as={Link} to="/">
+            <Nav.Link as={Link} to="/sign-in">
               <Button>Sign In</Button>
             </Nav.Link>
-            <Nav.Link as={Link} to="/">
+            <Nav.Link as={Link} to="/sign-up">
               <Button variant="success">Sign Up</Button>
             </Nav.Link>
           </Nav>

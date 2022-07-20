@@ -1,6 +1,6 @@
 import { Col, Container, Row } from 'react-bootstrap';
-import Banner from '../components/home/Banner';
-import Questions from '../components/home/Questions';
+import Banner from '../../components/home/Banner';
+import Questions from '../../components/home/Questions';
 
 const Home = () => {
   return (
