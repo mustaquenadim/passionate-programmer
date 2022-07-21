@@ -1,10 +1,12 @@
-import React, { Suspense } from 'react';
+import { lazy, Suspense } from 'react';
 import { Route, Routes } from 'react-router-dom';
 import DefaultLayout from './components/layout/DefaultLayout';
-const Home = React.lazy(() => import('./pages/Home'));
-const SignIn = React.lazy(() => import('./pages/SignIn'));
-const SignUp = React.lazy(() => import('./pages/SignUp'));
-const NotFound = React.lazy(() => import('./pages/404'));
+const Home = lazy(() => import('./pages/home'));
+const SignIn = lazy(() => import('./pages/signin'));
+const SignUp = lazy(() => import('./pages/signup'));
+const Questions = lazy(() => import('./pages/questions'));
+const Ask = lazy(() => import('./pages/questions/ask'));
+const NotFound = lazy(() => import('./pages/404'));
 
 const AppRouter = () => {
   return (
@@ -31,6 +33,22 @@ const AppRouter = () => {
           element={
             <Suspense fallback={<>...</>}>
               <SignIn />
+            </Suspense>
+          }
+        />
+        <Route
+          path="questions"
+          element={
+            <Suspense fallback={<>...</>}>
+              <Questions />
+            </Suspense>
+          }
+        />
+        <Route
+          path="questions/ask"
+          element={
+            <Suspense fallback={<>...</>}>
+              <Ask />
             </Suspense>
           }
         />

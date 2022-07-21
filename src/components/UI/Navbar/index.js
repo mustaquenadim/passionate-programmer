@@ -11,8 +11,11 @@ export const UiNavbar = () => {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto d-flex align-items-center">
-            <Nav.Link as={Link} to="/">
+            <Nav.Link as={Link} to="/questions">
               Questions
+            </Nav.Link>
+            <Nav.Link as={Link} to="/questions/ask">
+              Ask
             </Nav.Link>
             <Nav.Link as={Link} to="/">
               Mustaque Nadim
