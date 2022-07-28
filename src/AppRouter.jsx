@@ -1,6 +1,6 @@
 import { lazy, Suspense } from 'react';
 import { Route, Routes } from 'react-router-dom';
-import DefaultLayout from './components/layout/DefaultLayout';
+import DefaultLayout from './layouts/DefaultLayout';
 const Home = lazy(() => import('./pages/home'));
 const SignIn = lazy(() => import('./pages/signin'));
 const SignUp = lazy(() => import('./pages/signup'));

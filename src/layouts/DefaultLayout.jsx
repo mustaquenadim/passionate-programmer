@@ -1,6 +1,6 @@
 import { Outlet } from 'react-router-dom';
-import Footer from '../partials/Footer';
-import Header from '../partials/Header';
+import Footer from '../components/partials/Footer';
+import Header from '../components/partials/Header';
 
 const DefaultLayout = () => {
   return (
