@@ -1,5 +1,5 @@
 import { Col, Container, Image, Row } from 'react-bootstrap';
-import banner from '../../assets/images/code_thinking.svg';
+import banner from '../../assets/illustrations/banner-image.svg';
 
 const Banner = () => {
   return (
