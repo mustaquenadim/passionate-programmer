@@ -1,15 +1,18 @@
-import { Card, Container } from 'react-bootstrap';
-import QuestionCard from '../../components/common/Question';
+import { Container, Stack } from 'react-bootstrap';
 import Banner from '../../components/home/Banner';
+import QuestionCard from '../../components/UI/QuestionCard';
 
 const Home = () => {
   return (
     <>
       <Banner />
       <Container className="my-5">
-        <Card>
+        <Stack gap={4}>
           <QuestionCard />
-        </Card>
+          <QuestionCard />
+          <QuestionCard />
+          <QuestionCard />
+        </Stack>
       </Container>
     </>
   );

@@ -1,6 +1,6 @@
 import { Badge, Card, Col, Image, Row, Stack } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
-import userAvatar from '../../assets/images/user-avatar.png';
+import userAvatar from '../../../assets/images/user-avatar.png';
 
 const QuestionCard = () => {
   return (
@@ -8,18 +8,16 @@ const QuestionCard = () => {
       <Card.Body>
         <Row className="g-3">
           <Col md={3}>
-            <Stack className="h-100 text-center" direction="horizontal" gap={3}>
-              <div className="w-100">
+            <Stack className="h-100" direction="horizontal" gap={3}>
+              <div className="w-100 h-100 d-flex flex-column align-items-center justify-content-center bg-light rounded">
                 <div>১২৩</div>
                 <div>ভোট</div>
               </div>
-              <div className="vr" />
-              <div className="w-100 mx-auto">
+              <div className="w-100 h-100 d-flex flex-column align-items-center justify-content-center bg-light rounded">
                 <div>১২৩</div>
                 <div>উত্তর</div>
               </div>
-              <div className="vr" />
-              <div className="w-100">
+              <div className="w-100 h-100 d-flex flex-column align-items-center justify-content-center bg-light rounded">
                 <div>১২৩</div>
                 <div>দেখেছেন</div>
               </div>

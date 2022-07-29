@@ -1,6 +1,7 @@
 import { lazy, Suspense } from 'react';
 import { Route, Routes } from 'react-router-dom';
 import DefaultLayout from './layouts/DefaultLayout';
+import QuestionAnswer from './pages/questions/question-answer';
 const Home = lazy(() => import('./pages/home'));
 const SignIn = lazy(() => import('./pages/signin'));
 const SignUp = lazy(() => import('./pages/signup'));
@@ -49,6 +50,14 @@ const AppRouter = () => {
           element={
             <Suspense fallback={<>...</>}>
               <Ask />
+            </Suspense>
+          }
+        />
+        <Route
+          path="questions/:questionId"
+          element={
+            <Suspense fallback={<>...</>}>
+              <QuestionAnswer />
             </Suspense>
           }
         />

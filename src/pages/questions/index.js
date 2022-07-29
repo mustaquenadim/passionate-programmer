@@ -1,6 +1,6 @@
 import React from 'react';
 import { Container, Stack } from 'react-bootstrap';
-import QuestionCard from '../../components/common/Question';
+import QuestionCard from '../../components/UI/QuestionCard';
 
 const Questions = () => {
   return (
