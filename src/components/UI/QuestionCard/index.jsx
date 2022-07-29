@@ -1,6 +1,6 @@
-import { Badge, Card, Col, Image, Row, Stack } from 'react-bootstrap';
+import { Badge, Card, Col, Row, Stack } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
-import userAvatar from '../../../assets/images/user-avatar.png';
+import UserCard from '../UserCard';
 
 const QuestionCard = () => {
   return (
@@ -34,17 +34,7 @@ const QuestionCard = () => {
                 <Badge bg="secondary">intermediate</Badge>
               </Stack>
               <div className="d-flex align-items-center justify-content-end">
-                <Card bg={'light'} border="light" style={{ width: '18rem' }}>
-                  <Row>
-                    <Col xs={3}>
-                      <Image src={userAvatar} fluid roundedCircle />
-                    </Col>
-                    <Col xs={9}>
-                      <div className="h6">Mustaque Nadim</div>
-                      <div className="text-muted">answered 5 hours ago</div>
-                    </Col>
-                  </Row>
-                </Card>
+                <UserCard />
               </div>
             </Stack>
           </Col>
